@@ -36,8 +36,8 @@
     <Compile Include="Extensions\DataParameterCollectionExtensions.cs" />
     <Compile Include="DbInvokeFactory.cs" />
     <Compile Include="DataAnnotations\DbMethodAttribute.cs" />
-    <Compile Include="DataAnnotations\DbObjectAttribute.cs" />
     <Compile Include="DataAnnotations\DbPropertyAttribute.cs" />
+    <Compile Include="DataAnnotations\DbTypeAttribute.cs" />
     <Compile Include="DbTypeAndSize.cs" />
     <Compile Include="Helpers\StringHelper.cs" />
     <Compile Include="MethodIntercepter.cs" />

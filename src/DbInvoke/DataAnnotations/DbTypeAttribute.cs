@@ -4,11 +4,11 @@ using DbInvoke.Helpers;
 namespace DbInvoke.DataAnnotations
 {
     [AttributeUsage(AttributeTargets.Class)]
-    public sealed class DbObjectAttribute : Attribute
+    public sealed class DbTypeAttribute : Attribute
     {
         private readonly string _name;
 
-        public DbObjectAttribute(string name)
+        public DbTypeAttribute(string name)
         {
             _name = name;
         }

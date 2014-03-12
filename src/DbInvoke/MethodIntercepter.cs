@@ -50,7 +50,7 @@ namespace DbInvoke
                     }
                     else if (invocation.Method.ReturnType.IsClass)
                     {
-                        var oracleTypeName = invocation.Method.ReturnType.GetAttribute<DbObjectAttribute>().GetFullName();
+                        var oracleTypeName = invocation.Method.ReturnType.GetAttribute<DbTypeAttribute>().GetFullName();
                         declareStrings.Add(string.Format("  v_result {0};", oracleTypeName));
 
                         var returnTypeProperties = invocation.Method.ReturnType.GetProperties();
@@ -107,7 +107,7 @@ namespace DbInvoke
                     }
                     else if (parameterInfo.ParameterType.IsClass)
                     {
-                        var oracleTypeName = parameterInfo.ParameterType.GetAttribute<DbObjectAttribute>().GetFullName();
+                        var oracleTypeName = parameterInfo.ParameterType.GetAttribute<DbTypeAttribute>().GetFullName();
                         declareStrings.Add(string.Format("  par{0} {1};", parameterInfo.Position, oracleTypeName));
 
                         var properties = parameterInfo.ParameterType.GetProperties();
