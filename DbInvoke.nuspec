@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>DbInvoke</id>
+        <version>0.1.0.1</version>
+        <title>DbInvoke</title>
+        <authors>Evgeny Akhtimirov</authors>
+        <owners>Evgeny Akhtimirov</owners>
+        <licenseUrl>https://github.com/wilbit/DbInvoke/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/wilbit/DbInvoke</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Invoke functions and procedures from the database using a simple interface description. Available for Oracle database.</description>
+        <frameworkAssemblies>
+            <frameworkAssembly assemblyName="System.Data" targetFramework="" />
+        </frameworkAssemblies>
+        <dependencies>
+            <dependency id="Castle.Core" version="3.2.2" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="src\bin\Release\DbInvoke.dll" target="lib\net40-client\DbInvoke.dll" />
+    </files>
+</package>
